@@ -8,7 +8,9 @@ puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 input=gets.strip
 def input_to_index(input)
-  index=input.to_i - 1
+  input=input.to_i
+  index= input - 1
+  return index
 end
 move(board,index,"X")
 board
